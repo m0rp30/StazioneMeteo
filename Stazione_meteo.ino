@@ -1,3 +1,6 @@
+/**** SECRET ****/
+#include "secret.h"
+
 /**** LIBRARIES ****/
 #include <DHT.h> // DHT22
 #include <BMP180.h>
@@ -21,13 +24,13 @@
 
 /**** VARIABLES ****/
 // WIFI
-const char* ssid = "ssid_name"; // SSID name
-const char* password = "ssid_password"; // SSID password
+const char* ssid = SSID_NAME; // SSID name
+const char* password = SSID_PSW; // SSID password
 // SERVER
 const char* server_name = "http://api.weathercloud.net/set";
 // DEVICE
-const char* my_id = "devide_id"; // Device id
-const char* my_key = "device_key"; // Device key
+const char* my_id = DEV_ID; // Device id
+const char* my_key = DEV_KEY; // Device key
 const char* vers = "/ver/1.2/type/201"; // Site' API version
 
 /**** OBJECT DECLARETIONS ****/
